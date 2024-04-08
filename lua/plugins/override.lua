@@ -17,6 +17,8 @@ return {
       local cmp = require "cmp"
       local luasnip = require "luasnip"
       opts.mapping = {
+        ["<C-j>"] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Insert },
+        ["<C-k>"] = cmp.mapping.select_prev_item { behavior = cmp.SelectBehavior.Insert },
         ["<Up>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), { "i", "c" }),
         ["<Down>"] = cmp.mapping(cmp.mapping.scroll_docs(4), { "i", "c" }),
         ["<CR>"] = cmp.mapping.confirm { select = false },
