@@ -91,6 +91,7 @@ return {
     opts = function(_, opts)
       opts.section.header.val = week_header()
       opts.section.buttons.val = {
+        opts.button("o", "Oil", "<cmd>Oil<cr>"),
         opts.button("f", "Find Files", "<cmd>Telescope find_files<cr>"),
         opts.button("r", "Recent Files", "<cmd>Telescope oldfiles<cr>"),
         opts.button("g", "Telescope", "<cmd>Telescope live_grep<cr>"),
