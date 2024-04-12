@@ -19,6 +19,7 @@ return {
     },
     mappings = {
       n = {
+        ["<Leader><Leader>"] = { "<cmd>Telescope find_files<cr>", desc = "Find files, second mapping" },
         ["<Leader>tt"] = { "<Cmd>ToggleTerm size=90 direction=vertical<cr>", desc = "Open terminal horizontal" },
         L = {
           function() require("astrocore.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
