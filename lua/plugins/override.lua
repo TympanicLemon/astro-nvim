@@ -10,6 +10,7 @@ return {
       },
     },
   },
+
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
@@ -31,6 +32,7 @@ return {
       })
     end,
   },
+
   {
     "hrsh7th/nvim-cmp",
     opts = function(_, opts)
