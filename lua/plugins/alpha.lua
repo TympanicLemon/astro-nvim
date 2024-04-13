@@ -93,7 +93,7 @@ return {
       opts.section.buttons.val = {
         opts.button("f", "Find Files", "<cmd>Telescope find_files<cr>"),
         opts.button("r", "Recent Files", "<cmd>Telescope oldfiles<cr>"),
-        opts.button("g", "Telescope", "<cmd>Telescope live_grep<cr>"),
+        opts.button("g", "Live Grep", "<cmd>Telescope live_grep<cr>"),
         opts.button("l", "Lazy", "<cmd>Lazy<cr>"),
         opts.button("q", "Quit", "<cmd>qa!<cr>"),
       }
