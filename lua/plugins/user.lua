@@ -1,5 +1,10 @@
 ---@type LazySpec
 return {
+  -- Disabled plugins
+  { "s1n7ax/nvim-window-picker", enabled = false },
+  { "mrjones2014/smart-splits.nvim", enabled = false },
+
+  -- Plugins
   { "folke/tokyonight.nvim" },
 
   {
