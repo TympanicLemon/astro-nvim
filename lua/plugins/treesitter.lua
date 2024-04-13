@@ -7,6 +7,7 @@ return {
       "bash",
       "c",
       "diff",
+      "html",
       "java",
       "json",
       "lua",
