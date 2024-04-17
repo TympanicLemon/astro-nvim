@@ -1,17 +1,6 @@
 ---@type LazySpec
 return {
   {
-    "nvim-telescope/telescope.nvim",
-    opts = {
-      pickers = {
-        find_files = {
-          find_command = { "rg", "--files", "--hidden", "--glob", "!.git/*" },
-        },
-      },
-    },
-  },
-
-  {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
