@@ -37,6 +37,27 @@ return {
   },
 
   {
+    { "AstroNvim/astrocore", opts = { rooter = false } },
+    {
+      "jay-babu/project.nvim",
+      main = "project_nvim",
+      event = "VeryLazy",
+      opts = {
+        ignore_lsp = { "lua_ls" },
+        patterns = { ".git", ".idea", "mvnw", "build.gradle", "pom.xml" },
+        exclude_dirs = {
+          vim.fn.expand "~",
+        },
+      },
+    },
+    {
+      "nvim-telescope/telescope.nvim",
+      dependencies = { "jay-babu/project.nvim" },
+      opts = function() require("telescope").load_extension "projects" end,
+    },
+  },
+
+  {
     "folke/trouble.nvim",
     cmd = { "TroubleToggle", "Trouble" },
     dependencies = {
