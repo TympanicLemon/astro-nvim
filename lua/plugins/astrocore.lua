@@ -7,7 +7,7 @@ return {
       opt = {
         backup = false,
         conceallevel = 1,
-        colorcolumn = "120",
+        colorcolumn = "80",
         formatoptions = "jn",
         scrolloff = 15,
         shiftround = true,

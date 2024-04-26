@@ -6,14 +6,9 @@ return {
 
   -- Plugins
   {
-    "folke/tokyonight.nvim",
+    "xero/miasma.nvim",
+    lazy = false,
     priority = 1000,
-    opts = {
-      styles = {
-        comments = { italic = false },
-        keywords = { italic = false },
-      },
-    },
   },
 
   {
