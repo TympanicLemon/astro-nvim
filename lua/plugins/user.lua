@@ -8,6 +8,7 @@ return {
   {
     "comfysage/evergarden",
     opts = {
+      transparent_background = true,
       contrast_dark = "medium",
       style = {
         types = { italic = false },
@@ -16,6 +17,18 @@ return {
       },
     },
   },
+
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --     styles = {
+  --       comments = { italic = false },
+  --       keywords = { italic = false },
+  --     },
+  --   },
+  -- },
 
   {
     "mbbill/undotree",

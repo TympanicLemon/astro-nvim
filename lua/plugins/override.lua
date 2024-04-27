@@ -1,6 +1,11 @@
 ---@type LazySpec
 return {
   {
+    "rcarriga/nvim-notify",
+    opts = function(_, opts) opts.background_colour = "#000000" end,
+  },
+
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
