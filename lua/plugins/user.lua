@@ -6,9 +6,15 @@ return {
 
   -- Plugins
   {
-    "xero/miasma.nvim",
-    lazy = false,
-    priority = 1000,
+    "comfysage/evergarden",
+    opts = {
+      contrast_dark = "medium",
+      style = {
+        types = { italic = false },
+        keyword = { italic = false },
+        comment = { italic = false },
+      },
+    },
   },
 
   {
