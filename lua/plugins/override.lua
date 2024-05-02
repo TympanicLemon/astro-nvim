@@ -6,6 +6,11 @@ return {
   },
 
   {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = function(_, opts) opts.filesystem.group_empty_dirs = true end,
+  },
+
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
