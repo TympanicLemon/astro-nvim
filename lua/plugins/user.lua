@@ -6,16 +6,8 @@ return {
 
   -- Plugins
   {
-    "comfysage/evergarden",
-    opts = {
-      transparent_background = true,
-      contrast_dark = "medium",
-      style = {
-        types = { italic = false },
-        keyword = { italic = false },
-        comment = { italic = false },
-      },
-    },
+    "sainnhe/gruvbox-material",
+    config = function() vim.g.gruvbox_material_disable_italic_comment = 1 end,
   },
 
   {
