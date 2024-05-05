@@ -1,11 +1,6 @@
 ---@type LazySpec
 return {
   {
-    "rcarriga/nvim-notify",
-    opts = function(_, opts) opts.background_colour = "#000000" end,
-  },
-
-  {
     "nvim-neo-tree/neo-tree.nvim",
     opts = function(_, opts) opts.filesystem.group_empty_dirs = true end,
   },
@@ -13,7 +8,6 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
-      -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "bash",
         "diff",
@@ -48,15 +42,6 @@ return {
             cmp.confirm { select = true }
           elseif luasnip.jumpable(1) then
             luasnip.jump(1)
-          else
-            fallback()
-          end
-        end, { "i", "s" }),
-        ["<S-Tab>"] = cmp.mapping(function(fallback)
-          if cmp.visible() then
-            cmp.select_prev_item()
-          elseif luasnip.jumpable(-1) then
-            luasnip.jump(-1)
           else
             fallback()
           end
