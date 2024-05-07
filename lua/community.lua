@@ -6,7 +6,7 @@ return {
   { import = "astrocommunity.editing-support.multiple-cursors-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.rust" },
+  -- { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.project.project-nvim" },
   { import = "astrocommunity.utility.mason-tool-installer-nvim" },
 }
