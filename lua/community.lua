@@ -7,5 +7,5 @@ return {
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.project.project-nvim" },
-  { import = "astrocommunity.utility.mason-tool-installer-nvim" },
+  -- { import = "astrocommunity.utility.mason-tool-installer-nvim" },
 }
