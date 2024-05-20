@@ -1,27 +1,14 @@
 ---@type LazySpec
 return {
   {
-    "nvim-neo-tree/neo-tree.nvim",
-    opts = function(_, opts) opts.filesystem.group_empty_dirs = true end,
-  },
-
-  {
-    "nvim-telescope/telescope.nvim",
-    opts = {
-      pickers = {
-        find_files = {
-          find_command = { "rg", "--files", "--hidden", "--glob", "!.git/*" },
-        },
-      },
-    },
-  },
-
-  {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "bash",
+        "css",
         "diff",
+        "html",
+        "javascript",
         "json",
         "lua",
         "luadoc",

@@ -3,13 +3,9 @@ return {
   -- Disabled plugins
   { "s1n7ax/nvim-window-picker", enabled = false },
   { "mrjones2014/smart-splits.nvim", enabled = false },
+  { "stevearc/resession.nvim", enabled = false },
 
   -- Plugins
-  {
-    "sainnhe/gruvbox-material",
-    config = function() vim.g.gruvbox_material_disable_italic_comment = 1 end,
-  },
-
   {
     "mbbill/undotree",
     config = function()
