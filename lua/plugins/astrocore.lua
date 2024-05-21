@@ -20,6 +20,8 @@ return {
     },
     mappings = {
       n = {
+        ["<Leader>js"] = { "<cmd>LiveServerStart<cr>", desc = "Start Live Server" },
+        ["<Leader>jS"] = { "<cmd>LiveServerStop<cr>", desc = "Stop Live Server" },
         ["<Leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Find projects" },
         ["<Leader>tt"] = { "<Cmd>ToggleTerm size=90 direction=vertical<cr>", desc = "Open terminal horizontal" },
         ["<Leader><Leader>"] = { "<cmd>Telescope find_files<cr>", desc = "Find files, second mapping" },

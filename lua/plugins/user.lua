@@ -7,8 +7,9 @@ return {
 
   -- Plugins
   {
-    "rebelot/heirline.nvim",
-    opts = function(_, opts) opts.winbar = nil end,
+    "barrett-ruth/live-server.nvim",
+    cmd = { "LiveServerStart", "LiveServerStop" },
+    config = true,
   },
 
   {

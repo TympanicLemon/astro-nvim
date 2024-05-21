@@ -1,6 +1,11 @@
 ---@type LazySpec
 return {
   {
+    "rebelot/heirline.nvim",
+    opts = function(_, opts) opts.winbar = nil end,
+  },
+
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
