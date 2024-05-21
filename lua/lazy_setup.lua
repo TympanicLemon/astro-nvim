@@ -9,6 +9,10 @@ require("lazy").setup({
   { import = "plugins" },
 } --[[@as LazySpec]], {
   install = { colorscheme = { "astrodark", "habamax" } },
+  change_detection = {
+    enabled = false,
+    notify = false,
+  },
   ui = { backdrop = 100 },
   performance = {
     rtp = {
