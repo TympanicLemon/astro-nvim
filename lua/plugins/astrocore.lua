@@ -7,7 +7,7 @@ return {
       opt = {
         backup = false,
         conceallevel = 1,
-        colorcolumn = "80",
+        colorcolumn = "120",
         formatoptions = "jn",
         scrolloff = 15,
         shiftwidth = 4,
@@ -47,6 +47,15 @@ return {
           end,
           desc = "Disable auto-commenting on new line",
         },
+      },
+      set_indentation_levels_for_html_and_css = {
+        event = "FileType",
+        pattern = { "html", "css" },
+        callback = function()
+          vim.opt.shiftwidth = 2
+          vim.opt.tabstop = 2
+          vim.opt.expandtab = true
+        end,
       },
     },
   },
