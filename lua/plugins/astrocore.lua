@@ -20,9 +20,6 @@ return {
     },
     mappings = {
       n = {
-        ["<Leader>js"] = { "<cmd>LiveServerStart<cr>", desc = "Start Live Server" },
-        ["<Leader>jS"] = { "<cmd>LiveServerStop<cr>", desc = "Stop Live Server" },
-        ["<Leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Find projects" },
         ["<Leader>tt"] = { "<Cmd>ToggleTerm size=16 direction=horizontal<cr>", desc = "Open terminal horizontal" },
         ["<Leader><Leader>"] = { "<cmd>Telescope find_files<cr>", desc = "Find files, second mapping" },
         L = {
@@ -47,15 +44,6 @@ return {
           end,
           desc = "Disable auto-commenting on new line",
         },
-      },
-      set_indentation_levels_for_html_and_css = {
-        event = "FileType",
-        pattern = { "html", "css" },
-        callback = function()
-          vim.opt.shiftwidth = 2
-          vim.opt.tabstop = 2
-          vim.opt.expandtab = true
-        end,
       },
     },
   },

@@ -7,12 +7,6 @@ return {
 
   -- Plugins
   {
-    "barrett-ruth/live-server.nvim",
-    cmd = { "LiveServerStart", "LiveServerStop" },
-    config = true,
-  },
-
-  {
     "AlexvZyl/nordic.nvim",
     priority = 1000,
     opts = {
