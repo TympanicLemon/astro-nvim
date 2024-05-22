@@ -23,7 +23,7 @@ return {
         ["<Leader>js"] = { "<cmd>LiveServerStart<cr>", desc = "Start Live Server" },
         ["<Leader>jS"] = { "<cmd>LiveServerStop<cr>", desc = "Stop Live Server" },
         ["<Leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Find projects" },
-        ["<Leader>tt"] = { "<Cmd>ToggleTerm size=90 direction=vertical<cr>", desc = "Open terminal horizontal" },
+        ["<Leader>tt"] = { "<Cmd>ToggleTerm size=16 direction=horizontal<cr>", desc = "Open terminal horizontal" },
         ["<Leader><Leader>"] = { "<cmd>Telescope find_files<cr>", desc = "Find files, second mapping" },
         L = {
           function() require("astrocore.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
