@@ -7,14 +7,6 @@ return {
 
   -- Plugins
   {
-    "AlexvZyl/nordic.nvim",
-    priority = 1000,
-    opts = {
-      italic_comments = false,
-    },
-  },
-
-  {
     "mbbill/undotree",
     config = function()
       vim.g.undotree_SplitWidth = 40
