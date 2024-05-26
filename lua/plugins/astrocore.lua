@@ -20,6 +20,7 @@ return {
     },
     mappings = {
       n = {
+        ["<Leader>fp"] = { "<Cmd>Telescope projects<cr>", desc = "Find Projectsr" },
         ["<Leader>tt"] = { "<Cmd>ToggleTerm size=16 direction=horizontal<cr>", desc = "Open terminal horizontal" },
         ["<Leader><Leader>"] = { "<cmd>Telescope find_files<cr>", desc = "Find files, second mapping" },
         L = {
