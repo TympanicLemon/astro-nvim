@@ -6,6 +6,29 @@ return {
   },
 
   {
+    "stevearc/oil.nvim",
+    opts = {
+      keymaps = {
+        ["?"] = "actions.show_help",
+        ["<CR>"] = "actions.select",
+        ["v"] = "actions.select_vsplit",
+        ["h"] = "actions.select_split",
+        ["t"] = "actions.select_tab",
+        ["p"] = "actions.preview",
+        ["q"] = "actions.close",
+        ["r"] = "actions.refresh",
+        ["<BS>"] = "actions.parent",
+        ["_"] = "actions.open_cwd",
+        ["`"] = "actions.cd",
+        ["~"] = "actions.tcd",
+        ["H"] = "actions.toggle_hidden",
+        ["gs"] = "actions.change_sort",
+        ["g\\"] = "actions.toggle_trash",
+      },
+    },
+  },
+
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
