@@ -4,6 +4,7 @@ return {
   { "s1n7ax/nvim-window-picker", enabled = false },
   { "mrjones2014/smart-splits.nvim", enabled = false },
   { "stevearc/resession.nvim", enabled = false },
+  { "nmac427/guess-indent.nvim", enabled = false },
 
   -- Plugins
   {
