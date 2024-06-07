@@ -11,6 +11,7 @@ return {
         [[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
       }
       opts.section.buttons.val = {
+        opts.button("p", "Find Projects", "<cmd>Telescope projects<cr>"),
         opts.button("f", "Find Files", "<cmd>Telescope find_files<cr>"),
         opts.button("r", "Recent Files", "<cmd>Telescope oldfiles<cr>"),
         opts.button("g", "Live Grep", "<cmd>Telescope live_grep<cr>"),
