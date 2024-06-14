@@ -7,6 +7,8 @@ return {
   { "nmac427/guess-indent.nvim", enabled = false },
 
   -- Plugins
+  { "sainnhe/gruvbox-material" },
+
   {
     "mbbill/undotree",
     config = function()
