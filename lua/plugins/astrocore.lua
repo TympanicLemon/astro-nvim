@@ -6,8 +6,6 @@ return {
     options = {
       opt = {
         backup = false,
-        conceallevel = 1,
-        colorcolumn = "120",
         scrolloff = 15,
         shiftwidth = 2,
         smartindent = true,
@@ -18,8 +16,9 @@ return {
     },
     mappings = {
       n = {
-        ["<Leader>fp"] = { "<Cmd>Telescope projects<cr>", desc = "Find Projects" },
-        ["<Leader>tt"] = { "<Cmd>ToggleTerm size=16 direction=horizontal<cr>", desc = "Open terminal horizontal" },
+        ["<Leader>o"] = { "<cmd>Oil<CR>", desc = "Open Oil" },
+        ["<Leader>fp"] = { "<cmd>Telescope projects<cr>", desc = "Find Projects" },
+        ["<Leader>tt"] = { "<cmd>ToggleTerm size=16 direction=horizontal<cr>", desc = "Open terminal horizontal" },
         ["<Leader><Leader>"] = { "<cmd>Telescope find_files<cr>", desc = "Find files, second mapping" },
         L = {
           function() require("astrocore.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
