@@ -5,9 +5,15 @@ return {
   { "mrjones2014/smart-splits.nvim", enabled = false },
   { "stevearc/resession.nvim", enabled = false },
   { "nmac427/guess-indent.nvim", enabled = false },
+  { "NvChad/nvim-colorizer.lua", enabled = false },
 
   -- Plugins
   { "sainnhe/gruvbox-material" },
+
+  {
+    "brenoprata10/nvim-highlight-colors",
+    opts = {},
+  },
 
   {
     "mbbill/undotree",
