@@ -8,7 +8,7 @@ return {
   { "NvChad/nvim-colorizer.lua", enabled = false },
 
   -- Plugins
-  { "sainnhe/gruvbox-material" },
+  { "EdenEast/nightfox.nvim" },
 
   {
     "brenoprata10/nvim-highlight-colors",
