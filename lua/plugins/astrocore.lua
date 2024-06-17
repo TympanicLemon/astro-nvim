@@ -6,6 +6,7 @@ return {
     options = {
       opt = {
         backup = false,
+        conceallevel = 0,
         scrolloff = 15,
         shiftwidth = 2,
         smartindent = true,
