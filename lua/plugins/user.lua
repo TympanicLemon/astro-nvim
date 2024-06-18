@@ -8,7 +8,7 @@ return {
   { "NvChad/nvim-colorizer.lua", enabled = false },
 
   -- Plugins
-  { "EdenEast/nightfox.nvim" },
+  { "shaunsingh/nord.nvim" },
 
   {
     "brenoprata10/nvim-highlight-colors",
