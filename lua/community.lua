@@ -7,6 +7,5 @@ return {
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.project.project-nvim" },
 }
