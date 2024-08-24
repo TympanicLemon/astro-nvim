@@ -6,4 +6,5 @@ return {
     { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
     { import = "astrocommunity.pack.lua" },
     { import = "astrocommunity.pack.python" },
+    { import = "astrocommunity.pack.rust" },
 }
