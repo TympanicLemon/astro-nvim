@@ -1,6 +1,6 @@
 ---@type LazySpec
 return {
-    { "folke/tokyonight.nvim" },
+    { "sainnhe/gruvbox-material" },
     { "brenoprata10/nvim-highlight-colors", opts = {} },
 
     {
