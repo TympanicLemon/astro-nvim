@@ -1,8 +1,12 @@
 ---@type LazySpec
 return {
-    { "sainnhe/gruvbox-material" },
     { "brenoprata10/nvim-highlight-colors", opts = {} },
-
+    {
+        "AlexvZyl/nordic.nvim",
+        lazy = false,
+        priority = 1000,
+        config = function() require("nordic").load() end,
+    },
     {
         "mbbill/undotree",
         config = function()
